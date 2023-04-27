@@ -12,12 +12,19 @@ nimble install
 recyclang uses commands:
 
 `pls` - prints "my name is giovanni giorgio but everybody calls me giorgio"
+
 `let` - moves cursor left
+
 `me` - moves cursor right
+
 `out` - increments current cell value
+
 `of` - decrements current cell value
+
 `this` - prints current cell value
+
 `recycle` - prints current cell value as a char
+
 `bin` - breaks line
 
 each command should be placed into `~/.local/share/Trash/files` (regular recycle bin on most linux distros) with pattern `rlc.N X"`, where `N` is line number and `X` is a command. to run program you simply need to execute `rlc`. program will automatically find your recycle bin path.
