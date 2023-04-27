@@ -18,7 +18,11 @@ var lines: seq[string] = newSeq.collect:
     if fn.startsWith("rlc."):
       fn
 
-lines.sort
+lines.sort do (x, y: string) -> int:
+  var xNum = x["rlc.".len..x.find(" ") - 1].parseInt
+  var yNum = y["rlc.".len..y.find(" ") - 1].parseInt
+  
+  result = cmp(xNum, yNum)
 
 for i in 0..lines.len - 1:
   let line = lines[i]
