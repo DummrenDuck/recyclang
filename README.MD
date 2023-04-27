@@ -1,5 +1,6 @@
 # Recyclang
 i don't know why i made this **GARBAGE** xD
+
 **NOTE** it works on linux and probably wsl
 
 # Installation
